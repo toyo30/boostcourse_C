@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/foodwith.css">
+    <title>foodwidth-main</title>
+</head>
+<body>
+    <header class="header_box clear">
+        
+    
+        <a href="#" class="logo_link">
+            <h1 class="logo_title blind">foodwidth</h1>
+        </a>
+        
+        <input type="checkbox" class="open_gnb blind" id="btn_gnb">
+        <label for="btn_gnb" class="btn_area"><span class="blind">클릭영역</span></label>
+        
+        <nav class="nav_box">
+            <ul class="gnb clear">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">About</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Work</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="container_box">
+        <h2 class="content_area blind">컨텐츠 요소</h2>
+
+        <article class="banner_box">
+            <a href="#" class="banner_link">
+                <div class="banner_img_box">
+                    <img src="./image/banner_strawberry.png" alt="딸기배너" class="banner_img">
+            
+                    <h2 class="banner_title">오븐 없이도 베이킹 가능! 달콤 상큼 봄맞이 노오븐 딸기 케이크 만들기!</h2>
+                    <div class="user_thumb">
+                        <img src="./image/thumbnail_profile.jpg" alt="작성자썸네일" class="user_img"> 
+                        <h3 class="user_name">FULLMOON</h3>
+                    </div>
+
+                </div>
+            </a>   
+        </article>
+
+        <article>
+
+        </article>
+
+        <article class="recipe_box">
+
+            <div class="list_inner">
+                <ul class="recipe_list">
+                    <li class="recipe_item">
+                        <a href="#" class="recipe_link">
+                            <img src="./image/thumbnail_pumpkin.jpg" alt="썸네일호박" class="recipe_thumb">
+                            <h2 class="recipe_title">따뜻 담백 호박! 든든한 호박죽으로 한끼 해결     한끼 해결</h2>
+                        </a>
+                    </li>
+
+                    <li class="recipe_item">
+                        <a href="#" class="recipe_link">
+                            <img src="./image/thumbnail_lime.jpg" alt="썸네일라임" class="recipe_thumb">
+                            <h2 class="recipe_title">상큼한 라임청 담기</h2>
+                        </a>
+                    </li>
+
+                    <li class="recipe_item">
+                        <a href="#" class="recipe_link">
+                            <img src="./image/thumbnail_paprika.jpg" alt="썸네일피망" class="recipe_thumb">
+                            <h2 class="recipe_title">아삭아삭 빨간 피망 볶음 레시피</h2>
+                        </a>
+                    </li>
+
+                    <li class="recipe_item">
+                        <a href="#" class="recipe_link">
+                            <img src="./image/thumbnail_garlic.jpg" alt="썸네일마늘" class="recipe_thumb">
+                            <h2 class="recipe_title">바삭바삭 마늘빵 만들기</h2>
+                        </a>
+                    </li>
+
+                    <li class="recipe_item">
+                        <a href="#" class="recipe_link">
+                            <img src="./image/thumbnail_onion.jpg" alt="썸네일양파" class="recipe_thumb">
+                            <h2 class="recipe_title">자색 빛깔 적양파 피클 담기</h2>
+                        </a>
+                    </li>
+
+                    <li class="recipe_item">
+                        <a href="#" class="recipe_link">
+                            <img src="./image/thumbnail_avocado.jpg" alt="썸네일아보카도" class="recipe_thumb">
+                            <h2 class="recipe_title">건강한 아보카도 샌드위치 만들기</h2>
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="recipe_see_more">
+                    <a href="#" class="see_more_link">
+                        <h3 class="see_more_text">더보기</h3>
+                    </a>
+                </button>
+            </div>
+        
+        </article>
+
+        <article class="send_box">
+            <h2 class="send_text">전하고 싶은 말을 남겨주세요.</h2>
+            <p class="requested_text">답변을 원하시면 이메일을 꼭 적어주세요.</p>
+
+            <form class="send_message" action="/send_act" method="post" autocomplete="on" target="_blank">
+                
+                <fieldset class="input_section">
+                        <legend class="inp_title_box">
+                            <label for="nickname" class="inp_title">닉네임</label> 
+                            <button type="submiet" class="send_btn">전송하기</button>
+                        </legend>
+
+                        <div class="inp_area">
+                            <input type="text" placeholder="NICKNAME" id="nickname" class="inp_nickname"> 
+                        </div>
+                        
+                        
+                </fieldset>
+
+                <fieldset class="input_section inp_sel">
+
+                        <legend class="inp_title_box">
+                            <label for="email" class="inp_title">이메일</label>
+                        </legend>
+
+                        <div class="inp_area">
+                            <input type="text" placeholder="ID" id="email" class="inp_email"> 
+                        </div>
+
+                        <div class="inp_sel_text"><span class="sel_text">@</span></div>    
+
+                        <div class="sel_area">
+                            <select name="email_sel" id="email_sel" aria-label="선택하세요" class="sel_email">
+                                <option value="선택하세요">선택하세요</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="hanmail.net">hanmail.com</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="daum.net">daum.net</option>
+                            </select>
+                        </div>
+                        
+                        
+            
+                </fieldset>
+                
+            
+                <fieldset class="input_section">
+                    <div class="textinp_area">
+                        <textarea name="" id="" cols="20" rows="5" placeholder="전하고 싶은 말을 100자 이내로 적어 주세요." class="textinp"></textarea>
+                    </div>                    
+                </fieldset>
+            </form>
+        </article>
+
+    </section>
+
+    <footer class="footer_box">
+
+        <div class="notice_area">
+
+            <h4 class="notice_title clear">공지사항</h4>
+
+            <div class="notice_wrap">
+                <a href="#" class="notice_link">
+                    <p class="notice_text">다양한 소식을 담은 foodwith! 정식 오픈을 안내드립니다.</p>
+                </a>
+                <a href="#" class="notice_more_link">
+                    <span class="notice_more_text">더보기</span>
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="partner_box_wrap">
+            <div class="partner_box">
+                <h4 class="creators_title">Creators</h4>
+                <a href="#" class="creators_items">푸드크리에이터</a>
+                <a href="#" class="creators_items">푸드크리에이터</a>
+            </div>
+
+            <div class="partner_box">
+                <h4 class="partners_title">Partners</h4>
+                <a href="#" class="creators_items">푸드 파트너</a>
+                <a href="#" class="creators_items">푸드 스토어</a>
+            </div>
+
+        </div>
+
+
+        <address class="addr">
+    
+            <ul class="list_corp">
+                <li class="corp_items"><a href="#" class="corp_link">회사소개</a></li>
+                <li class="corp_items"><a href="#" class="corp_link">인재채용</a></li>
+                <li class="corp_items"><a href="#" class="corp_link">이용약관</a></li>
+                <li class="corp_items"><a href="#" class="corp_link">고객센터</a></li>
+            </ul>
+        
+            
+
+            <a href="#" class="copyright">©<strong class="strong_text"> foodwith </strong>All Right Reserved.</a>
+        </address>
+    </footer>
+</body>
+</html>
